@@ -5,13 +5,14 @@ async function getEventsData() {
   		const events=data.events;
 		const queryString = location.search;
 		const params = new URLSearchParams(queryString);
-		const Id = params.get('id');
-		const event = events.find((event) => event._id == Id);
+		const id = params.get('id');
+		console.log(id)
+		const event = events.find((event) => event._id == id);
 		const detailContainer = document.querySelector('#eventDetail');
 		createDetails(event,detailContainer);
   		return data;
 	}).catch ((error) => console.error(error)) 
-	console.log(data);
+	console.log(data);	
 }
 getEventsData();
   

@@ -3,13 +3,14 @@ const {createApp} = Vue
 const app = createApp({
 	data(){
 		return {
-			apiUrl: ' '
+			apiUrl: './back/amazing.json',
+			data: [],
 			events: [],
 
 		}
 	},
 	created(){
-		this.pedirDatos()
+		this.pedirDatos() 
 
 	},
 	mounted(){
@@ -19,8 +20,9 @@ const app = createApp({
 		pedirDatos(){
 			fetch(this.apiUrl)
 			.then(response => response.json())
-			.then(datosAPi=>{
-				this.events = datosApi
+			.then(datosApi=>{
+				this.data = datosApi
+				this.events = this.data.events
 			})
 		}
 	},
@@ -28,4 +30,4 @@ const app = createApp({
 
 	}
 
-}).mount('#app')
+}).mount('#app') 
