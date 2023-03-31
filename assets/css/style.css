@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	min-height: 20vh;
+}
+
+container-xl {
+	min-height: 20vh;
+}
+
+.navbar {
+	min-height: 10vh;
+}
+
+.space {
+	width: 40%;
+}
+
+.title {
+	background-image: url(https://e1.pxfuel.com/desktop-wallpaper/760/217/desktop-wallpaper-underground-clubs-on-dog-disco-dance.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 64%;
+}
+
+@media(max-width:1399px){
+	.space {
+		width: 30%;
+	}
+}
+
+@media(max-width:1100px){
+	.space {
+		width: 20%;
+	}
+}
+
+@media(max-width:997px){
+	.space {
+		width: 15%;
+	}
+
+	.navbar-brand {
+	height: 90px;
+   		 width: 350px;
+	}
+}
+
+@media(max-width:551px){
+	.space{
+		width: 0;
+	}
+}
+
+@media(max-width:446px){
+	.navbar-brand{
+		width: 300px;
+	}
+}
+
+@media(max-width:396px){
+	.navbar-brand{
+		width: 250px;
+	}
+}
+
+main {
+	flex: 1;
+	min-height: 77.3vh;
+}
+
+main .bi{
+	width: 16px;
+	height: 16px;
+	fill: black;
+}
+
+.card{
+	background: #ddffdd;
+	width: 18rem;
+	min-height: 26rem;
+	margin-top: 2vh;
+	margin-bottom:2vh;
+}
+
+.card-img-top{
+	width: 90%;
+	height:8rem;
+	margin-left: 5%;
+	margin-top: 5%;
+	box-shadow: -5px -5px 5px rgb(153, 153, 153);
+}
+
+.details-img{
+	border-radius: 5px;
+	max-width: 90%;
+	height:18rem;
+	margin-left: 5%;
+	margin-top: 5%;
+	box-shadow: -5px -5px 5px rgb(153, 153, 153);
+}
+
+#eventDetail{
+	min-height: 400px ; 
+	min-width: 350px;
+}
+
+.card .btn {
+	box-shadow: -5px -5px 5px rgb(143, 143, 143); 
+}
+
+.contact-form{
+	margin-top: 5rem;
+}
+
+@media(max-width:479px){
+	.contact-form{
+		max-width: 100%;
+	}
+}
+
+@media(min-width:480px){
+	.contact-form{
+		max-width: 50% ;
+	}
+}
+
+form {
+	border-radius: 5px;
+	padding: 15px;
+}
+
+form, table{
+	background: #ddffdd;
+}
+
+table td{
+	font-size: 1.2rem ;
+}
+
+.table-secondary{
+	font-size: 1rem;
+	padding: 0 !important;
+}
+
+footer{
+  	position: sticky;
+  	bottom: 0;
+	background-color: #f12e7a;
+	min-height: 5vh;
+}
+
+footer .bi{
+	width: 20px;
+	fill: whitesmoke;
+}
